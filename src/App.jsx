@@ -1,0 +1,34 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+
+// Placeholder pages
+const DummyPage = ({ name }) => (
+  <div className="text-center mt-5">
+    <h2>{name} Page Coming Soon</h2>
+  </div>
+);
+
+const App = () => {
+  return (
+    <Router>
+      {/* Ensure content isn't hidden behind navbar */}
+      <div style={{ paddingTop: "70px", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+        <Navbar />
+
+        <main className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+           
+            <Route path="*" element={<DummyPage name="404 - Page Not Found" />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
+export default App;
