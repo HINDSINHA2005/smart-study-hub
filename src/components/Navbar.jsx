@@ -16,7 +16,7 @@ const Navbar = () => {
             height="40"
             className="me-2"
           />
-          <span className="fw-bold fs-4 text-primary">SmartStudyHub</span>
+          <span className="fw-bold fs-4 text-primary">SmartStudy Hub</span>
         </Link>
 
         {/* Toggle Button for Mobile */}
@@ -34,7 +34,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
             {[
               { name: "Home", path: "/" },
-              { name: "Courses", path: "/courses" },
+              { name: "Services", path: "/courses" },
               { name: "Internships", path: "/internships" },
               { name: "About", path: "/about" },
               { name: "Contact", path: "/contact" },
@@ -51,15 +51,7 @@ const Navbar = () => {
               </li>
             ))}
 
-            {/* Auth Buttons */}
-            <li className="nav-item ms-3 d-flex align-items-center">
-              <Link className="btn btn-outline-primary btn-sm me-2" to="/login">
-                Login
-              </Link>
-              <Link className="btn btn-primary btn-sm" to="/register">
-                Register
-              </Link>
-            </li>
+            
           </ul>
         </div>
       </div>

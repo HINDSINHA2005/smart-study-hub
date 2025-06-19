@@ -9,6 +9,7 @@ import {
   Form,
 } from "react-bootstrap";
 
+
 const internships = [
   {
     id: 1,
@@ -16,7 +17,7 @@ const internships = [
     logo: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
     type: "Remote • Unpaid",
     duration: "1 Month",
-    certificate: "Certificate of Completion by SmartStudyHub",
+    certificate: "Certificate of Completion by SmartSoftwareHub",
     features: ["Project Work", "Mentor Support", "Flexible Timings"],
   },
   {
@@ -25,16 +26,16 @@ const internships = [
     logo: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
     type: "Remote • Unpaid",
     duration: "2 Months",
-    certificate: "Certificate of Completion by SmartStudyHub",
+    certificate: "Certificate of Completion by SmartSoftwareHub",
     features: ["Live Projects", "Weekly Reviews", "Resume Boosting"],
   },
   {
     id: 3,
-    skill: "C/C++",
+    skill: "C/C++ Development",
     logo: "https://cdn-icons-png.flaticon.com/512/919/919831.png",
     type: "Remote • Unpaid",
     duration: "3 Months",
-    certificate: "Certificate of Completion by SmartStudyHub",
+    certificate: "Certificate of Completion by SmartSoftwareHub",
     features: ["Capstone Project", "Mentorship", "Job Recommendation"],
   },
 ];
@@ -66,7 +67,7 @@ const InternshipsSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Submitted Form Data: ", formData);
-    alert("Application submitted!");
+    alert("Application submitted successfully!");
     setShow(false);
   };
 
@@ -74,10 +75,11 @@ const InternshipsSection = () => {
     <section className="py-5 bg-light">
       <Container>
         <h2 className="text-center mb-4 fw-bold text-primary">
-          Skill-Based Training + Internships
+          Internship Programs by SmartStudyHub
         </h2>
         <p className="text-center text-muted mb-5">
-          Gain real-world experience, build projects, and earn a verified certificate from SmartStudyHub.
+          As part of our industry outreach, we offer training-based internships to help aspiring developers
+          gain hands-on experience while contributing to real-world projects.
         </p>
         <Row>
           {internships.map((item) => (
@@ -132,21 +134,24 @@ const InternshipsSection = () => {
         </Row>
       </Container>
 
-      {/* Certifications & Achievements */}
+      {/* Certification Display */}
       <section className="py-5 bg-light text-center">
         <Container>
-          <h2 className="fw-bold mb-4">Certification By SmartStudyHub</h2>
-          <p className="mb-5">Get certified by SmartStudyHub and boost your profile.</p>
+          <h2 className="fw-bold mb-4">Official Certification</h2>
+          <p className="mb-5">
+            All interns receive a verified certificate from SmartSoftwareHub recognizing their skills and contribution.
+          </p>
           <img
             src="src/assets/certificate.png"
-            alt="SmartStudyHub Certificate"
+            alt="SmartSoftwareHub Certificate"
             className="img-fluid rounded shadow"
             style={{ maxWidth: "600px", width: "100%" }}
           />
         </Container>
       </section>
+      
 
-      {/* Application Modal */}
+      {/* Modal Form */}
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Apply for {selectedInternship}</Modal.Title>
@@ -227,6 +232,8 @@ const InternshipsSection = () => {
         </Form>
       </Modal>
     </section>
+    
+    
   );
 };
 

@@ -3,24 +3,30 @@ import { Container, Carousel } from "react-bootstrap";
 const testimonials = [
   {
     id: 1,
-    name: "Priya Sharma",
-    dept: "CSE",
-    quote: "SmartStudyHub gave me clarity and confidence. Their courses are industry-relevant.",
-    image: "https://randomuser.me/api/portraits/women/31.jpg",
+    name: "Anjali Mehra",
+    title: "Project Manager",
+    company: "TechNova Solutions",
+    quote:
+      "SmartSoftwareHub exceeded our expectations. They delivered our web portal ahead of schedule with excellent communication.",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     id: 2,
-    name: "Ravi Kumar",
-    dept: "ECE",
-    quote: "I landed an internship within a month! The platform is easy to use and well-organized.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Karan Patel",
+    title: "CTO",
+    company: "FinGrow Pvt. Ltd.",
+    quote:
+      "Their automation tool saved us hours of manual work every week. Highly professional and efficient team!",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
   },
   {
     id: 3,
-    name: "Sneha Verma",
-    dept: "IT",
-    quote: "Highly recommend SmartStudyHub to every student who wants real-world exposure.",
-    image: "https://randomuser.me/api/portraits/women/33.jpg",
+    name: "Sarah Fernandes",
+    title: "Marketing Head",
+    company: "BrightMedia Inc.",
+    quote:
+      "From UI/UX to final deployment, everything was seamless. We love the mobile app they built for our campaign!",
+    image: "https://randomuser.me/api/portraits/women/46.jpg",
   },
 ];
 
@@ -28,7 +34,7 @@ const TestimonialsSection = () => {
   return (
     <section className="py-5 bg-white">
       <Container>
-        <h2 className="text-center mb-5 fw-bold">What Students Say</h2>
+        <h2 className="text-center mb-5 fw-bold">What Our Clients Say</h2>
 
         <style>
           {`
@@ -50,10 +56,10 @@ const TestimonialsSection = () => {
         <Carousel
           indicators={false}
           controls={true}
-          interval={5000}
+          interval={6000}
           className="custom-carousel"
         >
-          {testimonials.map(({ id, name, dept, quote, image }) => (
+          {testimonials.map(({ id, name, title, company, quote, image }) => (
             <Carousel.Item key={id}>
               <div className="d-flex justify-content-center">
                 <div
@@ -72,8 +78,9 @@ const TestimonialsSection = () => {
                       <blockquote className="blockquote mb-2">
                         <p className="mb-0">"{quote}"</p>
                       </blockquote>
-                      <footer className="blockquote-footer">
-                        {name} from <cite>{dept}</cite>
+                      <footer className="blockquote-footer mt-1">
+                        <strong>{name}</strong>, {title} at{" "}
+                        <cite title={company}>{company}</cite>
                       </footer>
                     </div>
                   </div>

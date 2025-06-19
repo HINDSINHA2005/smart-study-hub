@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="col-md-4 mb-3">
             <h5>SmartStudyHub</h5>
             <p style={{ fontSize: "0.9rem" }}>
-              Empowering students with high-quality courses and internship opportunities to kickstart their careers.
+              At SmartStudyHub, we offer end-to-end digital solutions — from code to creative. Whether you're a startup, business, or educational institution, our team is equipped to build powerful tools and engaging platforms tailored to your goals.
             </p>
           </div>
 
