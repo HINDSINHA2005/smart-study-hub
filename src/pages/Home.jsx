@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import TestimonialsSection from "../components/TestimonialSection";
 import StatsCounter from "./StatsCounter";
+import banner2 from "../assets/banner2.jpg"
 
 const Home = () => {
   return (
@@ -46,7 +47,7 @@ const Home = () => {
             {/* Hero Image + Badges */}
             <Col md={6} className="text-center">
               <img
-                src="src\assets\banner2.jpg"
+                src={banner2}
                 alt="Software Solutions"
                 className="img-fluid rounded shadow mb-4"
                 style={{ maxHeight: "400px", objectFit: "cover" }}
