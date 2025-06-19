@@ -8,6 +8,7 @@ import {
   Modal,
   Form,
 } from "react-bootstrap";
+import certificate from "../assets/certificate.png"
 
 
 const internships = [
@@ -142,7 +143,7 @@ const InternshipsSection = () => {
             All interns receive a verified certificate from SmartSoftwareHub recognizing their skills and contribution.
           </p>
           <img
-            src="src/assets/certificate.png"
+            src={certificate}
             alt="SmartSoftwareHub Certificate"
             className="img-fluid rounded shadow"
             style={{ maxWidth: "600px", width: "100%" }}

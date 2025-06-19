@@ -1,61 +1,69 @@
 import { useState } from "react";
 import { Container, Row, Col, Card, Button, Modal, Form } from "react-bootstrap";
 import StatsCounter from "./StatsCounter";
+import python from "../assets/python.jpg"
+import uiux from '../assets/uiux.avif'
+import web from '../assets/web.jpg'
+import bots from '../assets/bots.jpg'
+import video from '../assets/video.jpg'
+import mobile from '../assets/mobile.avif'
+import digital from '../assets/digital.jpg'
+import ecom from '../assets/ecom.jpg'
 
 const services = [
   {
     title: "Website Development",
     desc: "Responsive and scalable websites built with modern technologies like React, Next.js, and Bootstrap.",
-    icon: "src/assets/web.jpg",
+    icon: web,
     duration: "Project-based",
     cert: "Custom Deliverables",
   },
   {
     title: "Python Applications",
     desc: "Automation tools, backend systems, and desktop software built with robust Python stacks.",
-    icon: "src/assets/python.jpg",
+    icon: python,
     duration: "Use-case Specific",
     cert: "Deployment Ready",
   },
   {
     title: "UI/UX Design",
     desc: "Clean, user-centric designs built with Figma, Adobe XD, and best UI/UX practices.",
-    icon: "src/assets/uiux.avif",
+    icon: uiux,
     duration: "Design Sprint",
     cert: "Prototyped & Delivered",
   },
   {
     title: "Video Editing",
     desc: "Polished video editing for YouTube, Reels, branding & tutorials using Premiere Pro and DaVinci Resolve.",
-    icon: "src/assets/video.jpg",
+    icon: video,
     duration: "Per Project",
     cert: "High-Quality Output",
   },
   {
     title: "Mobile App Development",
     desc: "Flutter & React Native apps for Android and iOS with high-performance and modern UI.",
-    icon: "src/assets/mobile.avif",
+    icon: mobile,
     duration: "4-8 Weeks",
     cert: "App Store Ready",
   },
   {
     title: "Automation & Bots",
     desc: "Increase productivity with bots, data scrapers, task automation, and custom workflow tools.",
-    icon: "src/assets/bots.jpg",
+    icon: bots,
     duration: "Fast Delivery",
     cert: "Source Code Included",
   },
   {
     title: "E-Commerce Solutions",
     desc: "Full-featured online stores using Shopify, WooCommerce, or custom React-based systems.",
-    icon: "src/assets/ecom.jpg",
+    icon: ecom,
     duration: "2–6 Weeks",
     cert: "Payment Gateway Integrated",
   },
   {
     title: "Digital Branding",
     desc: "Logos, social media kits, brand identity & campaigns that create strong digital presence.",
-    icon: "src/assets/digital.jpg",
+    icon: digital,
     duration: "1–2 Weeks",
     cert: "All Design Files Delivered",
   },

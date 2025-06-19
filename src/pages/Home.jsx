@@ -2,6 +2,22 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import TestimonialsSection from "../components/TestimonialSection";
 import StatsCounter from "./StatsCounter";
 import banner2 from "../assets/banner2.jpg"
+import python from "../assets/python.jpg"
+import uiux from '../assets/uiux.avif'
+import web from '../assets/web.jpg'
+import bots from '../assets/bots.jpg'
+import video from '../assets/video.jpg'
+import mobile from '../assets/mobile.avif'
+
+import cap1 from '../assets/cap1.jpg'
+import cap3 from '../assets/cap3.jpg'
+import cap2 from '../assets/cap2.webp'
+import images6 from '../assets/images6.png'
+import images1 from '../assets/images1.png'
+import images2 from '../assets/images2.png'
+import cap4 from '../assets/cap4.jpg'
+
+
 
 const Home = () => {
   return (
@@ -228,42 +244,42 @@ const Home = () => {
         {
           title: "Website Development",
           desc: "Responsive and scalable websites built with modern tech like React, Next.js, and Bootstrap.",
-          icon: "src/assets/web.jpg",
+          icon: web,
           duration: "Project-based",
           cert: "Custom Deliverables"
         },
         {
           title: "Python Applications",
           desc: "Automate tasks, build desktop tools, and craft efficient backend systems using Python.",
-          icon: "src/assets/python.jpg",
+          icon: python,
           duration: "Use-case Specific",
           cert: "Deployment Ready"
         },
         {
           title: "UI/UX Design",
           desc: "Clean, user-centric designs with tools like Figma, Adobe XD, and modern UX practices.",
-          icon: "src/assets/uiux.avif",
+          icon: uiux,
           duration: "Design Sprint",
           cert: "Prototyped & Delivered"
         },
         {
           title: "Video Editing",
           desc: "Professional editing for promo videos, reels, YouTube, and tutorials using Premiere Pro & DaVinci.",
-          icon: "src/assets/video.jpg",
+          icon: video,
           duration: "Per Project",
           cert: "High-Quality Output"
         },
         {
           title: "Mobile App Development",
           desc: "Cross-platform mobile apps using Flutter or React Native with seamless UX.",
-          icon: "src/assets/mobile.avif",
+          icon:mobile,
           duration: "4-8 Weeks",
           cert: "App Store Ready"
         },
         {
           title: "Automation & Bots",
           desc: "Boost productivity with task automation bots, scrapers, and workflow tools.",
-          icon: "src/assets/bots.jpg",
+          icon: bots,
           duration: "Fast Delivery",
           cert: "Source Code Included"
         },
@@ -362,22 +378,22 @@ const Home = () => {
     <p className="mt-5 mb-3 fw-semibold">Trusted by teams at:</p>
     <div className="d-flex justify-content-center flex-wrap gap-4">
       <img
-        src="src\assets\images6.png"
+        src={images6}
         alt="Freelancer"
         style={{ height: "40px" }}
       />
       <img
-        src="src\assets\cap4.jpg"
+        src={cap3}
         alt="Kaizen"
         style={{ height: "40px" }}
       />
       <img
-        src="src\assets\cap3.jpg"
+        src={cap1}
         alt="Stark Solution"
         style={{ height: "40px" }}
       />
       <img
-        src="src\assets\cap2.webp"
+        src={cap2}
         alt="Random"
         style={{ height: "40px" }}
       />
@@ -400,16 +416,16 @@ const Home = () => {
         <div className="carousel-item active">
           <Row className="justify-content-center align-items-center gx-2">
             {[
-              "images1.png",
-              "cap3.jpg",
-              "cap1.jpg",
-              "cap4.jpg",
+              images6,
+              cap3,
+              cap1,
+              cap4,
               
               
             ].map((img, index) => (
               <Col key={index} xs={4} sm={3} md={2} className="mb-3 d-flex justify-content-center">
                 <img
-                  src={`src/assets/${img}`}
+                  src={img}
                   alt={`Client ${index + 1}`}
                   className="img-fluid"
                   style={{ height: "100px", objectFit: "contain" }}
@@ -423,16 +439,16 @@ const Home = () => {
         <div className="carousel-item">
           <Row className="justify-content-center align-items-center gx-2">
             {[
-              "images1.png",
-              "images2.png",
-              "cap2.webp",
-              "images6.png",
+              images1,
+              images2,
+              cap2,
+              images6,
 
               
             ].map((img, index) => (
               <Col key={index} xs={4} sm={3} md={2} className="mb-3 d-flex justify-content-center">
                 <img
-                  src={`src/assets/${img}`}
+                  src={img}
                   alt={`Client ${index + 9}`}
                   className="img-fluid"
                   style={{ height: "100px", objectFit: "contain" }}
