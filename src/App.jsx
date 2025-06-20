@@ -8,6 +8,7 @@ import Internships from "./pages/Internships";
 import Courses from "./pages/Courses";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import ScrollToTop from "./pages/ScrollToTop";
 // Placeholder pages
 const DummyPage = ({ name }) => (
   <div className="text-center mt-5">
@@ -18,6 +19,7 @@ const DummyPage = ({ name }) => (
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       {/* Ensure content isn't hidden behind navbar */}
       <div
         style={{
