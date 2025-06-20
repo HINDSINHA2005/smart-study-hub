@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { useState } from "react";
 import TestimonialsSection from "../components/TestimonialSection";
 import StatsCounter from "./StatsCounter";
 import banner2 from "../assets/banner2.jpg"
@@ -16,10 +17,12 @@ import images6 from '../assets/images6.png'
 import images1 from '../assets/images1.png'
 import images2 from '../assets/images2.png'
 import cap4 from '../assets/cap4.jpg'
+import ContactModal from "./ContactModal";
 
 
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <section
@@ -55,7 +58,7 @@ const Home = () => {
                 </li>
               </ul>
 
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" onClick={() => setShowModal(true)}>
                 Get a Free Consultation
               </Button>
             </Col>
@@ -84,7 +87,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
+ <ContactModal show={showModal} handleClose={() => setShowModal(false)} />
       <section className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
         <Container>
           <h2 className="mb-5 text-center fw-bold display-6">

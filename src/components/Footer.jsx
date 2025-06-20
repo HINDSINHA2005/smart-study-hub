@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-primary text-white mt-auto py-4 shadow-sm">
@@ -12,25 +13,34 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-md-4 mb-3">
-            <h6>Quick Links</h6>
-            <ul className="list-unstyled">
-              <li><a href="/" className="text-white text-decoration-none">Home</a></li>
-              <li><a href="/courses" className="text-white text-decoration-none">Courses</a></li>
-              <li><a href="/internships" className="text-white text-decoration-none">Internships</a></li>
-              <li><a href="/about" className="text-white text-decoration-none">About</a></li>
-              <li><a href="/contact" className="text-white text-decoration-none">Contact</a></li>
-            </ul>
-          </div>
+<div className="col-md-4 mb-3">
+  <h6>Quick Links</h6>
+  <ul className="list-unstyled">
+    <li><Link to="/" className="text-white text-decoration-none">Home</Link></li>
+    <li><Link to="/courses" className="text-white text-decoration-none">Courses</Link></li>
+    <li><Link to="/internships" className="text-white text-decoration-none">Internships</Link></li>
+    <li><Link to="/about" className="text-white text-decoration-none">About</Link></li>
+    <li><Link to="/contact" className="text-white text-decoration-none">Contact</Link></li>
+  </ul>
+</div>
 
           {/* Contact Info */}
           <div className="col-md-4 mb-3">
             <h6>Contact Us</h6>
             <p style={{ fontSize: "0.9rem" }}>
-              Email: support@smartstudyhub.com<br />
-              Phone: +91 9876543210
+              Email: info@smartstudyhub.co.in<br />
+              Phone: +11 2354678798
             </p>
+            <h6>Address</h6>
+            <p style={{ fontSize: "0.9rem" }}>
+              Office Address: 780 Cumberland
+Chambersburg
+PA,USA 17201<br />
+              
+            </p>
+
             <div>
+              
               <a href="#" className="text-white me-2"><i className="bi bi-facebook"></i></a>
               <a href="#" className="text-white me-2"><i className="bi bi-twitter"></i></a>
               <a href="#" className="text-white"><i className="bi bi-linkedin"></i></a>
