@@ -29,7 +29,7 @@ const Footer = () => {
             <h6>Contact Us</h6>
             <p style={{ fontSize: "0.9rem" }}>
               Email: info@smartstudyhub.co.in<br />
-              Phone: +11 2354678798
+      
             </p>
             <h6>Address</h6>
             <p style={{ fontSize: "0.9rem" }}>

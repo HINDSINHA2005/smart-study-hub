@@ -351,7 +351,7 @@ const Home = () => {
   <Container>
     <h3 className="fw-bold mb-3">Ready to Transform Your Business?</h3>
     <p className="mb-4">
-      Let <strong>SmartSoftware Solutions</strong> help you innovate with
+      Let <strong>SmartStudy Hub </strong> help you innovate with
       custom development, automation, and design services.
     </p>
     <Button variant="primary" size="lg" href="/contact">

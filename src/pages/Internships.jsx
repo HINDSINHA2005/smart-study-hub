@@ -140,7 +140,7 @@ const InternshipsSection = () => {
         <Container>
           <h2 className="fw-bold mb-4">Official Certification</h2>
           <p className="mb-5">
-            All interns receive a verified certificate from SmartSoftwareHub recognizing their skills and contribution.
+            All interns receive a verified certificate from SmartStudy Hub recognizing their skills and contribution.
           </p>
           <img
             src={certificate}
