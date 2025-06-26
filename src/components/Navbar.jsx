@@ -16,7 +16,7 @@ const Navbar = () => {
             height="40"
             className="me-2"
           />
-          <span className="fw-bold fs-4 text-primary">SmartStudy Hub<sub> Software Solution</sub></span><br/>
+          <span className="fw-bold fs-4 text-primary">SmartStudy Hub</span><br/>
       
 
 
