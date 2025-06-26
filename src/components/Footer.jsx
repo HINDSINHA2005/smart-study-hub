@@ -29,16 +29,14 @@ const Footer = () => {
             <h6>Contact Us</h6>
             <p style={{ fontSize: "0.9rem" }}>
               Name:Rishabh Jain<br/>
+              Designation:Operational Manager<br/>
               Email: info@smartstudyhub.co.in<br />
       
             </p>
             <h6>Address</h6>
             <p style={{ fontSize: "0.9rem" }}>
-              Office Address: 780 Cumberland
-Chambersburg
-   
-PA,USA, 17201<br />
-Branch address: 201009 Delhi India
+              Office Address: 21,B-block,NSP,delhi-110034<br />
+
               
             </p>
 
