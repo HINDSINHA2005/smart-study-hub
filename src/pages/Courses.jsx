@@ -166,6 +166,7 @@ const CoursesSection = () => {
         </Row>
       </Container>
 <StatsCounter/>
+ 
       {/* Modal */}
       <Modal show={showModal} onHide={handleClose} centered>
         <Modal.Header closeButton>
