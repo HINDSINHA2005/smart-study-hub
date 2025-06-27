@@ -1,5 +1,7 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import TestimonialsSection from "../components/TestimonialSection";
 import StatsCounter from "./StatsCounter";
 import banner2 from "../assets/banner2.jpg"
@@ -58,9 +60,9 @@ const Home = () => {
                 </li>
               </ul>
 
-              <Button variant="primary" size="lg" onClick={() => setShowModal(true)}>
-                Get a Free Consultation
-              </Button>
+              <Button as={Link} to="/contact" variant="primary" size="lg">
+  Get a Free Consultation
+</Button>
             </Col>
 
             {/* Hero Image + Badges */}

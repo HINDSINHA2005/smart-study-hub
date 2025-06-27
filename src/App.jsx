@@ -9,6 +9,10 @@ import Courses from "./pages/Courses";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ScrollToTop from "./pages/ScrollToTop";
+import ApplyForm from "./pages/ApplyForm";
+import AdminDashboard from "./pages/AdminDashboard";
+import AdminLogin from "./pages/AdminLogin";
+
 // Placeholder pages
 const DummyPage = ({ name }) => (
   <div className="text-center mt-5">
@@ -41,6 +45,12 @@ const App = () => {
             
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+
+ <Route path="/admin-login" element={<AdminLogin />} />
+<Route path="/admin" element={<AdminDashboard />} />
+
+
+<Route path="/apply" element={<ApplyForm />} />
 
             <Route
               path="*"

@@ -8,7 +8,9 @@ import {
   Modal,
   Form,
 } from "react-bootstrap";
-import certificate from "../assets/certificate.png"
+import certificate from "../assets/certificate.png";
+import ApplyButtons from "../components/ApplyButton";
+import { useNavigate } from "react-router-dom";
 
 
 const internships = [
@@ -42,6 +44,8 @@ const internships = [
 ];
 
 const InternshipsSection = () => {
+  const navigate = useNavigate();
+
   const [show, setShow] = useState(false);
   const [selectedInternship, setSelectedInternship] = useState("");
   const [formData, setFormData] = useState({
@@ -79,8 +83,9 @@ const InternshipsSection = () => {
           Internship Programs by SmartStudyHub
         </h2>
         <p className="text-center text-muted mb-5">
-          As part of our industry outreach, we offer training-based internships to help aspiring developers
-          gain hands-on experience while contributing to real-world projects.
+          As part of our industry outreach, we offer training-based internships
+          to help aspiring developers gain hands-on experience while
+          contributing to real-world projects.
         </p>
         <Row>
           {internships.map((item) => (
@@ -123,7 +128,7 @@ const InternshipsSection = () => {
                     <Button
                       variant="primary"
                       size="sm"
-                      onClick={() => handleShow(item.skill)}
+                     onClick={() => navigate("/apply")}// ✅ remove the arrow function, or call it inside
                     >
                       Apply Now
                     </Button>
@@ -140,7 +145,8 @@ const InternshipsSection = () => {
         <Container>
           <h2 className="fw-bold mb-4">Official Certification</h2>
           <p className="mb-5">
-            All interns receive a verified certificate from SmartStudy Hub recognizing their skills and contribution.
+            All interns receive a verified certificate from SmartStudy Hub
+            recognizing their skills and contribution.
           </p>
           <img
             src={certificate}
@@ -150,7 +156,6 @@ const InternshipsSection = () => {
           />
         </Container>
       </section>
-      
 
       {/* Modal Form */}
       <Modal show={show} onHide={handleClose} centered>
@@ -232,9 +237,8 @@ const InternshipsSection = () => {
           </Modal.Footer>
         </Form>
       </Modal>
+      <ApplyButtons />
     </section>
-    
-    
   );
 };
 
